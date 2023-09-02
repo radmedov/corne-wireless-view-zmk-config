@@ -14,8 +14,16 @@
             label = "ONEPASS";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp H &kp E &kp L &kp L &kp O>;
+                <&macro_tap>,
+                <&kp LS(H) &kp LS(E) &kp LS(L) &kp LS(L) &kp LS(O)>;
+        };
+        SSHOT: SSHOT {
+            compatible = "zmk,behavior-macro";
+            label = "SSHOT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LS(S) &kp LS(C) &kp LS(R) &kp LS(E) &kp LS(E) &kp LS(N) &kp LS(S) &kp LS(H) &kp LS(O) &kp LS(T)>;
         };
     };
 
