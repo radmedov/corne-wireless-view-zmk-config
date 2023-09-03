@@ -147,7 +147,7 @@
                                                      &kp LALT    &kp LGUI    &mt LSHFT SPACE           &lt 1 BSPC    &mo 1    &lt 3 SLASH
             >;
         };
-s
+
         lower_layer {
             label = "Lower";
             bindings = <
