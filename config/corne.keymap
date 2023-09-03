@@ -93,8 +93,9 @@
             label = "ONEPASS";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap>,
-                <&kp LS(H) &kp LS(E) &kp LS(L) &kp LS(L) &kp LS(O)>;
+                <&macro_press &kp LGUI>,
+                <&macro_tap &kp BACKSLASH>,
+                <&macro_release &kp LGUI>;
         };
         SSHOT: SSHOT {
             compatible = "zmk,behavior-macro";
