@@ -11,6 +11,13 @@
 
 / {
     macros {
+        LIQUID: LIQUID {
+            compatible = "zmk,behavior-macro";
+            label = "LIQUID";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp LBRC &kp PERCENT &kp SPACE &kp SPACE &kp SPACE &kp PERCENT &kp RBRC &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
+        };
         ONEPASS: ONEPASS {
             compatible = "zmk,behavior-macro";
             label = "ONEPASS";
@@ -53,7 +60,7 @@
             #binding-cells = <0>;
             bindings = <&kp ESC>, <&kp GRAVE>;
             keep-mods = <(MOD_LGUI)>;
-            mods = <(MOD_LGUI)>;
+            mods = <(MOD_LGUI|MOD_LALT)>;
         };
     };
 
@@ -85,7 +92,7 @@
             bindings = <
                 &kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                   &kp CARET        &kp AMPS    &kp ASTERISK    &kp LPAR    &kp RPAR         &kp BSPC
                 &none      &none     &none   &none     &none     &none                       &none            &none       &none           &none       &kp BSLH    &kp BACKSLASH
-                &none      &bootloader     &none   &none     &none     &none                       &kp UNDER        &kp PLUS    &kp LBRC        &kp RBRC    &kp PIPE        &kp TILDE
+                &none      &bootloader     &none   &none     &none     &none                 &none        &none       &LIQUID        &none    &none        &none
                                                 &trans    &trans    &trans                   &trans    &trans    &trans
             >;
         };
