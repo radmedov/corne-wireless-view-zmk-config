@@ -47,11 +47,12 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
-        gresc: grave_escape {
+        gesc: grave_escape {
             compatible = "zmk,behavior-mod-morph";
             label = "GRAVE_ESCAPE";
             #binding-cells = <0>;
             bindings = <&kp ESC>, <&kp GRAVE>;
+            keep-mods = <(MOD_RSFT)>;
             mods = <(MOD_LGUI)>;
         };
     };
@@ -62,7 +63,7 @@
         default_layer {
             label = "Base";
             bindings = <
-                &gresc         &kp Q        &kp W        &kp E       &kp R       &kp T              &kp Y       &kp U        &kp I         &kp O                   &kp P          &kp BSPC
+                &gesc         &kp Q        &kp W        &kp E       &kp R       &kp T              &kp Y       &kp U        &kp I         &kp O                   &kp P          &kp BSPC
                 &mt LCTRL TAB  &bhm LCTRL A  &bhm LSHFT S  &bhm LALT D  &bhm LGUI F  &kp G              &kp H  &bhm RGUI J  &bhm LALT K  &bhm RSHIFT L   &bhm LCTRL SINGLE_QUOTE         &kp ENTER
                 &mo 2          &kp Z        &kp X        &kp C       &kp V       &kp B              &kp N  &kp M       &kp COMMA   &kp DOT       &kp SINGLE_QUOTE         &kp SINGLE_QUOTE
                                                 &kp LALT    &kp LGUI    &mt LSHFT SPACE              &lt 1 BSPC    &mo 1    &lt 3 SLASH
