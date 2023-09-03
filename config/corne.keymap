@@ -16,12 +16,12 @@
             label = "VIMEXIT";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap &kp ESC>;
-                <&macro_press &kp LSHFT>;
-                <&macro_tap &kp SEMICOLON>;
-                <&macro_release &kp LSHFT>;
-                <&macro_tap &kp W>;
-                <&macro_tap &kp Q>;
+                <&macro_tap &kp ESC>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp SEMICOLON>,
+                <&macro_release &kp LSHFT>,
+                <&macro_tap &kp W>,
+                <&macro_tap &kp Q>,
                 <&macro_tap &kp ENTER>;
         };
         TOGGLE_MIC: TOGGLE_MIC {
@@ -29,10 +29,10 @@
             label = "TOGGLE_MIC";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LGUI>;
-                <&macro_press &kp LSHFT>;
-                <&macro_tap &kp W>;
-                <&macro_release &kp LGUI>;
+                <&macro_press &kp LGUI>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp W>,
+                <&macro_release &kp LGUI>,
                 <&macro_release &kp LSHFT>;
         };
         VSSHOT: VSSHOT {
@@ -40,10 +40,10 @@
             label = "VSSHOT";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LGUI>;
-                <&macro_press &kp LALT>;
-                <&macro_tap &kp N5>;
-                <&macro_release &kp LGUI>;
+                <&macro_press &kp LGUI>,
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N5>,
+                <&macro_release &kp LGUI>,
                 <&macro_release &kp LALT>;
         };
         BRC: BRC {
