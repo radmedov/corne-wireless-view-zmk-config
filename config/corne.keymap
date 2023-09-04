@@ -86,7 +86,7 @@
             label = "LIQUID";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap &kp LBRC &kp PERCENT &kp SPACE &kp SPACE &kp SPACE &kp PERCENT &kp RBRC &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
+                <&macro_tap &kp LBRC &kp PERCENT &kp SPACE &kp SPACE &kp PERCENT &kp RBRC &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
         };
         ONEPASS: ONEPASS {
             compatible = "zmk,behavior-macro";
