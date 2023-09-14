@@ -143,8 +143,8 @@
             bindings = <
                 &gesc          &kp Q         &kp W         &kp E        &kp R        &kp T               &kp Y   &kp U        &kp I        &kp O           &kp P                      &kp BSPC
                 &mt LCTRL TAB  &bhm LCTRL A  &bhm LSHFT S  &bhm LALT D  &bhm LGUI F  &kp G               &kp H   &bhm RGUI J  &bhm LALT K  &bhm RSHIFT L   &bhm LCTRL SINGLE_QUOTE    &kp DOUBLE_QUOTES
-                &none          &kp Z         &kp X         &kp C        &kp V        &kp B               &kp N   &kp M        &kp COMMA    &kp DOT         &kp SINGLE_QUOTE           &kp SINGLE_QUOTE
-                                                       &mo 2    &kp LGUI    &mt LSHFT SPACE           &lt 1 ENTER    &mo 1    &lt 3 SLASH
+                &mo 2          &kp Z         &kp X         &kp C        &kp V        &kp B               &kp N   &kp M        &kp COMMA    &kp DOT         &kp SINGLE_QUOTE           &kp SINGLE_QUOTE
+                                                       &kp LALT    &kp LGUI    &mt LSHFT SPACE           &lt 1 ENTER    &mo 1    &lt 3 SLASH
             >;
         };
 
