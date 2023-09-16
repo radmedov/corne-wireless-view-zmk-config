@@ -120,8 +120,17 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <230>;    // <---[[moderate duration]]
-            quick-tap-ms = <100>;
+            tapping-term-ms = <300>;    // <---[[moderate duration]]
+            quick-tap-ms = <125>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+        bshsp: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <125>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
@@ -144,7 +153,7 @@
                 &gesc          &kp Q         &kp W         &kp E        &kp R        &kp T               &kp Y   &kp U        &kp I        &kp O           &kp P                       &kp BSPC
                 &mt LCTRL TAB  &bhm LCTRL A  &bhm LSHFT S  &bhm LALT D  &bhm LGUI F  &kp G               &kp H   &kp J        &kp K  &kp L   &bhm LCTRL SINGLE_QUOTE          &kp DOUBLE_QUOTES
                 &mo 2          &kp Z         &kp X         &kp C        &kp V        &kp B               &kp N   &kp M        &kp COMMA    &kp DOT         &kp SINGLE_QUOTE           &kp SPACE
-                                                       &kp LALT    &kp LGUI    &bhm LSHFT SPACE           &lt 1 ENTER    &mo 1    &lt 3 SLASH
+                                                       &kp LALT    &kp LGUI    &bshsp LSHFT SPACE           &lt 1 ENTER    &mo 1    &lt 3 SLASH
             >;
         };
 
