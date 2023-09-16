@@ -125,11 +125,11 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
-        bshsp: balanced_homerow_mods {
+        bshsp: balanced_shift_space {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "SHIFT_SPACE";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            tapping-term-ms = <220>;    // <---[[moderate duration]]
             quick-tap-ms = <125>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
