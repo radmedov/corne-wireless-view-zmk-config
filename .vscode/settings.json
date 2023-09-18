@@ -1,4 +1,6 @@
 {
+  "editor.rulers": [300],
+  "editor.wordWrapColumn": 320,
   "cSpell.enableFiletypes": [
     "!plaintext"
   ]
