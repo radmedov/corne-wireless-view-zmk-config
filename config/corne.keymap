@@ -121,7 +121,7 @@
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <300>;    // <---[[moderate duration]]
-            quick-tap-ms = <175>;
+            quick-tap-ms = <75>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
@@ -189,7 +189,7 @@
     };
 };
 
-&nice_view_spi {
-    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
-};
+// &nice_view_spi {
+//     cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
+// };
 
