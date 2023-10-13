@@ -116,13 +116,13 @@
     };
 
     behaviors {
-        bhm: balanced_homerow_mods {
+        hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;    // <---[[moderate duration]]
-            quick-tap-ms = <75>;
-            flavor = "balanced";
+            tapping-term-ms = <150>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
         bshsp: balanced_shift_space {
@@ -151,7 +151,7 @@
             label = "Qwerty";
             bindings = <
                 &gesc          &kp Q         &kp W         &kp E        &kp R        &kp T               &kp Y   &kp U        &kp I        &kp O           &kp P                       &kp BSPC
-                &mt LCTRL TAB  &bhm LCTRL A  &bhm LSHFT S  &bhm LALT D  &bhm LGUI F  &kp G               &kp H   &kp J        &kp K  &kp L   &bhm LCTRL SINGLE_QUOTE          &kp DOUBLE_QUOTES
+                &mt LCTRL TAB  &hm LCTRL A  &hm LSHFT S  &hm LALT D  &hm LGUI F  &kp G               &kp H   &kp J        &kp K  &kp L   &hm LCTRL SINGLE_QUOTE          &kp DOUBLE_QUOTES
                 &mo 2          &kp Z         &kp X         &kp C        &kp V        &kp B               &kp N   &kp M        &kp COMMA    &kp DOT         &kp SLASH           &kp F4
                                                        &kp LALT    &kp LGUI    &bshsp LSHFT SPACE        &bshsp RSHFT ENTER    &mo 1    &mo 3
             >;
