@@ -152,7 +152,7 @@
                 &gesc          &kp Q         &kp W         &kp E        &kp R        &kp T               &kp Y   &kp U        &kp I        &kp O           &kp P                       &kp BSPC
                 &mt LCTRL TAB  &bhm LCTRL A  &bhm LSHFT S  &bhm LALT D  &bhm LGUI F  &kp G               &kp H   &kp J        &kp K  &kp L   &bhm LCTRL SINGLE_QUOTE          &kp DOUBLE_QUOTES
                 &mo 2          &kp Z         &kp X         &kp C        &kp V        &kp B               &kp N   &kp M        &kp COMMA    &kp DOT         &kp SLASH           &kp F4
-                                                       &kp LALT    &kp LGUI    &bshsp LSHFT SPACE        &lt 1 ENTER    &mo 3    &mo 3
+                                                       &kp LALT    &kp LGUI    &bshsp LSHFT SPACE        &lt 1 ENTER    &mo 3    &mo 4
             >;
         };
 
@@ -181,6 +181,15 @@
             bindings = <
                 &none    &none        &none          &none          &none            &none                 &none    &none            &kp UP_ARROW     &none             &none          &none
                 &none    &none        &none          &none          &none           &none                  &none    &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW   &none          &none
+                &none    &none        &none          &none          &none           &none                  &none    &none            &none             &none            &none          &none
+                                                                  &trans    &trans    &trans             &trans    &trans    &trans
+            >;
+        };
+        media_layer {
+            label = "Media";
+            bindings = <
+                &none    &none        &none          &none          &none            &none                 &none    &none            &kp C_VOL_UP     &none             &none          &none
+                &none    &none        &none          &none          &none           &none                  &none    &kp C_PP   &kp C_VOL_DN   &kp C_NEXT   &none          &none
                 &none    &none        &none          &none          &none           &none                  &none    &none            &none             &none            &none          &none
                                                                   &trans    &trans    &trans             &trans    &trans    &trans
             >;
